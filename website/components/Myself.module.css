@@ -1,38 +1,57 @@
-@import 'colours.css';
+@import 'colours.css'; /* Import color variables */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap'); 
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
+.full-screen-div {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  position: relative; /* Make the container positioned */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.myPhoto {
+  position: absolute;
+  top: 50%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Ensure the photo appears on top of other elements */
+  height: 80%;
+}
 
 .leftdiv {
-    width: 65%;
-    /* height: 729px; */
-    height: 100%;
-    background-color: var(--primary-blue);
+  position: relative; /* Make the container positioned */
+  width: 70%;
+  height: 100%;
+  background-color: var(--primary-blue);
+  z-index: 0; /* Ensure the div appears behind the photo */
+  display: flex;
+  flex-direction: column; /* Arrange items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: flex-start; /* Align items horizontally */
+  padding-left: 12%; /* Set left padding to 12% */
+}
+
+.titlehome {
+  font-family: 'Courier Prime';
+  font-size: 90px;
+  color: var(--primary-orange);
+  line-height: 0.9;
+}
+
+.subtexthome {
+  font-family: 'Cabin';
+  margin-top: 2%;
+  font-size: 16px;
+  color: white;
 }
 
 .rightdiv {
-    width: 35%;
-    height: 100%;
-    background-color: var(--primary-orange);
+  width: 30%;
+  height: 100%;
+  background-color: var(--primary-orange);
+  z-index: 0; /* Ensure the div appears behind the photo */
 }
-
-
-.full-screen-div {
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove any default padding */
-    height: 100vh; /* Take up full viewport height */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3rem;
-    scroll-snap-align: start; /* Snap to the start of each div */
-    border-bottom: 1px solid #ccc; /* Add a border to separate the divs visually */
-    min-height: 100vh;
-    /* scroll-snap-type: y; */
-  }
-  
