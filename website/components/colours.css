@@ -1,0 +1,6 @@
+:root {
+    --primary-blue: #002379; /* Define primary color */
+    --primary-orange: #FF5F00; /* Define secondary color */
+    --secondary: #FFFAE6; /* Define success color */
+    --red-for-test: #dc3545; /* Define danger color */
+  }

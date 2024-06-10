@@ -1,0 +1,15 @@
+.full-screen-div {
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove any default padding */
+    height: 100vh; /* Take up full viewport height */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    scroll-snap-align: start; /* Snap to the start of each div */
+    border-bottom: 1px solid #ccc; /* Add a border to separate the divs visually */
+    min-height: 100vh;
+    /* scroll-snap-type: y; */
+  }
+  
